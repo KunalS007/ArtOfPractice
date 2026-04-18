@@ -5,6 +5,7 @@
     <classes>
       <class name="ART.ARTinterview.excelLogin">
         <methods>
+          <include name="tearDown"/>
           <include name="secondTest" invocation-numbers="0 1"/>
         </methods>
       </class> <!-- ART.ARTinterview.excelLogin -->

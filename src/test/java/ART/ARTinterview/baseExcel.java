@@ -1,13 +1,16 @@
 package ART.ARTinterview;
 
+import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -16,8 +19,8 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class baseExcel 
 {
-	WebDriver driver;
-	Properties prop;
+	protected WebDriver driver;
+	protected Properties prop;
 	
 	
 	public WebDriver initBrowser() throws IOException
@@ -65,7 +68,25 @@ public class baseExcel
 		 driver.findElement(By.name("password")).sendKeys(password);
 		 driver.findElement(By.xpath("//input[@type='submit']")).click();
 		 
-		 return driver;
-		
+		 return driver;	
 	}
+	
+	public String getScreenShot(String testCaseName) throws IOException
+    {
+        TakesScreenshot ts = (TakesScreenshot) driver;
+        File source = ts.getScreenshotAs(OutputType.FILE);
+
+        File reportsFolder = new File(System.getProperty("user.dir") + "\\reports");
+        if (!reportsFolder.exists())
+        {
+            reportsFolder.mkdirs();
+        }
+
+        File destination = new File(reportsFolder, testCaseName + ".png");
+        FileUtils.copyFile(source, destination);
+
+        return destination.getAbsolutePath();
+    }
+
+	
 }

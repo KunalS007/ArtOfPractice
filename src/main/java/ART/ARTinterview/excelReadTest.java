@@ -5,6 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -24,6 +25,8 @@ public class excelReadTest
 		
 		int totalRows = sheet.getPhysicalNumberOfRows();
 		System.out.println("Total Rows" +totalRows);
+		DataFormatter formatter = new DataFormatter();
+
 		
 		for(int i=0; i< totalRows; i++)
 		{
@@ -33,9 +36,12 @@ public class excelReadTest
 				Cell userCell = row.getCell(0);
 				Cell passCell = row.getCell(1);
 			
-				String userName = (userCell != null) ? userCell.toString(): "";
-				String password = (passCell != null) ? passCell.toString(): "";
+				//String userName = (userCell != null) ? userCell.toString(): "";
+				//String password = (passCell != null) ? passCell.toString(): "";
 				
+				 String userName = (userCell != null) ? formatter.formatCellValue(userCell) : ""; 
+				 String password = (passCell != null) ? formatter.formatCellValue(passCell) : "";
+
 				System.out.println(userName + "|" + password);
 			}
 		}
