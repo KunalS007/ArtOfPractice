@@ -1,0 +1,31 @@
+package ART.ARTinterview;
+
+import org.testng.annotations.Test;
+
+public class SeparateChars 
+{
+	@Test
+	public void Seprate()
+	{
+		String str = "sel@#!@wew12#dsd#%5";
+	
+		String letters = "";
+		String others = "";
+	
+		for(int i=0; i<str.length();i++)
+		{
+			char ch = str.charAt(i);
+			
+			if(Character.isLetter(ch))
+			{
+				letters += ch;
+			}
+			else
+			{
+				others += ch;
+			}
+		}
+		System.out.println("Alphabets: " +letters);
+		System.out.println("Number + Specials: " +others);
+	}	
+}
