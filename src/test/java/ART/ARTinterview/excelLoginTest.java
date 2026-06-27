@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 public class excelLoginTest extends baseExcel 
 {
-	@Test //test ng
+	@Test //test ng.
 	public void firstTest() throws IOException
 	{
 		driver = initBrowser();
