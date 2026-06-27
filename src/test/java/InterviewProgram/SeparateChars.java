@@ -1,4 +1,4 @@
-package ART.ARTinterview;
+package InterviewProgram;
 
 import org.testng.annotations.Test;
 
