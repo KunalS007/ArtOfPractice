@@ -16,7 +16,7 @@ import org.testng.annotations.Test;
 
 public class excelLoginTest extends baseExcel 
 {
-	@Test
+	@Test //test ng
 	public void firstTest() throws IOException
 	{
 		driver = initBrowser();
@@ -31,7 +31,7 @@ public class excelLoginTest extends baseExcel
 
 	        Sheet sheet = workbook.getSheet("Sheet1");
 	        int rows = sheet.getPhysicalNumberOfRows();
-	        Object[][] data = new Object[rows - 1][2];
+	        Object[][] data = new Object[rows - 1][2];.data
 	        DataFormatter formatter = new DataFormatter();
 
 	        for (int i = 1; i < rows; i++) 
