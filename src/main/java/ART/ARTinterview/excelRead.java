@@ -1,9 +1,7 @@
 package ART.ARTinterview;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
@@ -11,7 +9,7 @@ import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
 
-public class excelReadTest 
+public class excelRead 
 {
 	@Test
 	public void readExcelData() throws IOException
@@ -35,9 +33,6 @@ public class excelReadTest
 			{
 				Cell userCell = row.getCell(0);
 				Cell passCell = row.getCell(1);
-			
-				//String userName = (userCell != null) ? userCell.toString(): "";
-				//String password = (passCell != null) ? passCell.toString(): "";
 				
 				 String userName = (userCell != null) ? formatter.formatCellValue(userCell) : ""; 
 				 String password = (passCell != null) ? formatter.formatCellValue(passCell) : "";

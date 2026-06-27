@@ -1,0 +1,30 @@
+package InterviewProgram;
+
+import org.testng.annotations.Test;
+
+public class ReverseWordByWord 
+{
+	@Test
+	public void xyz()
+	{
+		String str = "Kunal Shah Vadodara";
+		String[] words = str.split(" ");
+		String result = "";
+		
+		for(int i=0; i<words.length; i++)
+		{
+			 String word = words[i];
+			 String reversedWord = "";
+			 
+			 for(int j = word.length()-1; j>=0; j--)
+			 {
+				 reversedWord += word.charAt(j);
+			 }
+			 
+			 result += reversedWord + " ";
+		}
+		System.out.println(result);
+	}
+}
+	
+	

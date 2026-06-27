@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class excelLogin extends baseExcel 
+public class excelLoginTest extends baseExcel 
 {
 	@Test
 	public void firstTest() throws IOException
