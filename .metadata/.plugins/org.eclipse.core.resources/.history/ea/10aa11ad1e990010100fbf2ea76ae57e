@@ -1,0 +1,23 @@
+package SyncProject.Presentation;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Random;
+
+public class test 
+{
+	public static String RanPro()
+	{
+		List<String> ab =  Arrays.asList("aaa","bbb","ccc","ddd","eee","fff","ggg");
+		Random ran = new Random();
+		int ranIndex = ran.nextInt(ab.size());
+		return ab.get(ranIndex);
+	}
+	
+
+	public static void main(String[] args) 
+	{
+		String product = test.RanPro();
+		System.out.println(product);
+	}
+}

@@ -1,0 +1,7 @@
+import ExcelDriven.Excel_Eample;
+
+public class Reterive_ExcelSample 
+{
+	Excel_Eample d =new Excel_Eample();
+	d.getData("Add Pr");
+}

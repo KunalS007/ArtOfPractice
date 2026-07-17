@@ -1,0 +1,14 @@
+import java.io.IOException;
+import java.util.ArrayList;
+
+import ExcelDriven.Excel_Eample;
+
+public class Reterive_ExcelSample 
+{
+	public static void main(String[] args) throws IOException
+	{
+		Excel_Eample d =new Excel_Eample();
+		ArrayList data = d.fetchDataExcel("Add Profile");
+		System.out.println(data.get(0));
+	}
+}

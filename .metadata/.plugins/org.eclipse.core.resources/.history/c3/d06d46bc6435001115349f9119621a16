@@ -1,0 +1,8 @@
+package ART.ARTinterview;
+
+public class SeparateChars 
+{
+	String str = "sel@#!@wew12#dsd#%5";
+	
+	
+}

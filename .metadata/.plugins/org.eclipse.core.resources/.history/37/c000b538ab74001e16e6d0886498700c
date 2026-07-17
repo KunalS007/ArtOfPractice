@@ -1,0 +1,12 @@
+import java.io.IOException;
+
+import ExcelDriven.Excel_Eample;
+
+public class Reterive_ExcelSample 
+{
+	public static void main(String[] args) throws IOException
+	{
+		Excel_Eample d =new Excel_Eample();
+		d.fetchDataExcel("Add Profile");
+	}
+}

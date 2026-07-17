@@ -1,0 +1,10 @@
+import ExcelDriven.Excel_Eample;
+
+public class Reterive_ExcelSample 
+{
+	public static void main(String[] args)
+	{
+		Excel_Eample d =new Excel_Eample();
+		d.fetchDataExcel("Add Profile");
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Third.Z.dfd&apos; to &apos;selectProductFromList&apos;&#x0D;&#x0A;- Original project: &apos;Z&apos;&#x0D;&#x0A;- Original element: &apos;Third.Z.dfd&apos;&#x0D;&#x0A;- Renamed element: &apos;Third.Z.selectProductFromList&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;dfd&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java&lt;Third.Z{dfd.java[dfd" matchStrategy="1" name="selectProductFromList" qualified="false" references="true" similarDeclarations="false" stamp="1772461353022" textual="false" version="1.0"/>
+</session>

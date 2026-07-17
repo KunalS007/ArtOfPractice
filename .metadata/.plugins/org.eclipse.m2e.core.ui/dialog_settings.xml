@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="400" key="x"/>
+		<item value="39" key="y"/>
+		<item value="450" key="height"/>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item value="All Catalogs" key="catalog"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="CombinationOfAll"/>
+			<item value="Guru_99"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="CombinationOfAll"/>
+			<item value="Guru_99"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeVersion">
+			<item value="1.4"/>
+		</list>
+		<list key="archetypeGroupId">
+			<item value="org.apache.maven.archetypes"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="maven-archetype-quickstart"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.preferences.RemoteArchetypeCatalogDialog">
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="E:\Automation Projects\CombinationOfAll"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="z3.z3"/>
+			<item value="ART.ART"/>
+			<item value="ART.art1"/>
+			<item value="Z1.Z1"/>
+			<item value="feb"/>
+			<item value="feb26"/>
+			<item value="Feb2026"/>
+			<item value="christmas.christmas"/>
+			<item value="Third.Z"/>
+			<item value="Third.One"/>
+			<item value="interview.second1"/>
+			<item value="interview.second"/>
+			<item value="interview.interview"/>
+			<item value="Growwx.Growwx_rsrc"/>
+			<item value="testinterview.testintervuew"/>
+		</list>
+		<list key="groupId">
+			<item value="z3"/>
+			<item value="1ART"/>
+			<item value="ART"/>
+			<item value="24"/>
+			<item value="Z1"/>
+			<item value="2026"/>
+			<item value="christmas"/>
+			<item value="Third"/>
+			<item value="interview"/>
+			<item value="Growwx"/>
+			<item value="testinterview"/>
+			<item value="Cloudester"/>
+			<item value="ytest"/>
+			<item value="SyncProject"/>
+		</list>
+		<list key="artifactId">
+			<item value="z3"/>
+			<item value="1ART"/>
+			<item value="art1"/>
+			<item value="24"/>
+			<item value="Z1"/>
+			<item value="feb"/>
+			<item value="feb26"/>
+			<item value="Feb2026"/>
+			<item value="christmas"/>
+			<item value="Z"/>
+			<item value="One"/>
+			<item value="second1"/>
+			<item value="second"/>
+			<item value="interview"/>
+			<item value="Growwx_rsrc"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

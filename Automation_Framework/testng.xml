@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Functional Suite">
+
+	<test name="Registration">
+		<classes>
+			<class name="Tests.RegistrationTest" />
+		</classes>
+	</test>
+
+
+<test name="SignOn_And_FindFlight_Test">
+	
+		<parameter name="Username" value="tutorial"/> 
+		<parameter name="Password" value="tutorial"/>
+	
+		<classes>
+			<class name="Tests.SignOn_And_FindFlight_Test" />
+		</classes>
+	</test>
+
+
+
+</suite>

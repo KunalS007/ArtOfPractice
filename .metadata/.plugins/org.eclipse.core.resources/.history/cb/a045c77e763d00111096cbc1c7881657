@@ -1,0 +1,29 @@
+package Z2.Z2;
+
+import java.io.IOException;
+
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class bc extends baseExcelZ2
+{
+
+	public void testOne() throws IOException
+	{
+		driver = init();
+	}
+	
+	@DataProvider(name="loginD")
+	public Object[][] getLoginData(String username,String password)
+	{
+		
+	}
+	
+	@Test(dataProvider="loginD")
+	public void testSecond()
+	{
+		
+	}
+	
+	
+}

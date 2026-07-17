@@ -1,0 +1,30 @@
+package SyncProject.Presentation;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class StandAloneTest {
+
+	public static void main(String[] args) 
+	{
+		int array[] = {100,50,60,555,170};
+		int max = array[0];
+		
+		for(int i=0; i<array.length;i++)
+		{
+			if(array[i] > max)
+			{
+				max = array[i];
+			}
+		}
+			System.out.println("Maximum number is" +max);
+		
+		
+	}
+
+}

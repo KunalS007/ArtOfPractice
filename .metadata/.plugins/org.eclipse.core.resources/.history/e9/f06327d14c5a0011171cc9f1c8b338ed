@@ -1,0 +1,42 @@
+package ART.ARTinterview;
+
+public class CharCountSequence 
+{
+    public static void main(String[] args) 
+    {
+        String input = "AAABBC";
+        char[] chars = input.toCharArray();
+        int n = chars.length;
+
+        for (int i = 0; i < n; i++) 
+        {
+            char current = chars[i];
+            int count = 1;
+
+            // Count how many same chars remain from position i
+            for (int j = i + 1; j < n; j++) 
+            {
+                if (chars[j] == current) 
+                {
+                    count++;
+                } else 
+                {
+                    break;
+                }
+            }
+
+            // Print counts in decreasing order for this sequence
+            for (int k = count; k >= 1; k--) 
+            {
+                System.out.print(current + " = " + k);
+//                if (!(i == n - 1 && k == 1)) 
+//                {
+//                    System.out.print(", ");
+//                }
+            }
+
+            // Skip already counted characters
+            i += count - 1;
+        }
+    }
+}

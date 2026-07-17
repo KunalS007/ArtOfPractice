@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;ExcelDriven.test.java&apos; to &apos;ExtractAfterColon.java&apos;&#x0D;&#x0A;- Original project: &apos;Presentation&apos;&#x0D;&#x0A;- Original element: &apos;ExcelDriven.test.java&apos;&#x0D;&#x0A;- Renamed element: &apos;ExcelDriven.ExtractAfterColon.java&apos;" description="Rename compilation unit &apos;test.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/test\/java&lt;ExcelDriven{test.java" name="ExtractAfterColon.java" references="false" stamp="1754991441465" version="1.0"/>
+</session>

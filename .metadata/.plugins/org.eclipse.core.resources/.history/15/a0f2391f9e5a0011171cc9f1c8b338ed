@@ -1,0 +1,33 @@
+package ART.ARTinterview;
+
+import org.testng.annotations.Test;
+
+public class asdff 
+{
+	@Test
+	public void Test()
+	{
+		String str = "asdf!@#adsf#$$@asdfd";
+		String letters = "";
+		String others = "";
+		
+		for(int i = 0; i<str.length(); i++)
+		{
+			char ch = str.charAt(i);
+			
+			if(Character.isLetter(ch))
+			{
+				letters += ch;
+			}
+			
+			else
+			{
+				others += ch;
+			}
+		}
+		
+		System.out.println("This are the letter: " +letters);
+		System.out.println("This are the Special: " +others);
+	}
+	
+}

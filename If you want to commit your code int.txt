@@ -1,0 +1,20 @@
+If you want to commit your code into the GitHub, please follow below steps:
+
+1) Goto that project location (Like C:/, D:/, E:/)
+2) In Git bash, Enter the command: git init [It is Initialize Git - Only first time)
+3) git add .
+4) git commit -m "initial commit"
+5) git remote add origin https://github.com/KunalS007/cypress-automation.git
+6) git remote -v
+7) git branch -M main
+8) git push -u origin main
+
+
+3) Check file status: Please enter command: git status
+4) Check your current branch: Please enter command: git branch
+5) Commit again, Please enter command: 
+git add .
+git commit -m "Initial Commit"
+
+6) Push to GitHub
+git push -u origin main

@@ -1,0 +1,4 @@
+# Created at 2026-04-23T12:20:14.698
+Boot Manifest-JAR contains absolute paths in classpath 'E:\Automation Projects\PracticalCloudester\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+

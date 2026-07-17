@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Functional Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Registration(failed)">
+    <classes>
+      <class name="Tests.RegistrationTest">
+        <methods>
+          <include name="OneTime_SetUp"/>
+          <include name="Register_User"/>
+          <include name="OneTime_TearDown"/>
+          <include name="Tear_Down"/>
+          <include name="Register_User_TestData_From_ExcelFile"/>
+          <include name="Register_User_TestData_From_PropertyFile"/>
+          <include name="Launch_Application"/>
+        </methods>
+      </class> <!-- Tests.RegistrationTest -->
+    </classes>
+  </test> <!-- Registration(failed) -->
+  <test thread-count="5" name="SignOn_And_FindFlight_Test(failed)">
+    <parameter name="Username" value="tutorial"/>
+    <parameter name="Password" value="tutorial"/>
+    <classes>
+      <class name="Tests.SignOn_And_FindFlight_Test">
+        <methods>
+          <include name="OneTime_SetUp"/>
+          <include name="SignOn"/>
+          <include name="SignOn_And_FindFlight"/>
+          <include name="OneTime_TearDown"/>
+          <include name="Tear_Down"/>
+          <include name="Launch_Application"/>
+          <include name="SignOn_With_Parameters"/>
+        </methods>
+      </class> <!-- Tests.SignOn_And_FindFlight_Test -->
+    </classes>
+  </test> <!-- SignOn_And_FindFlight_Test(failed) -->
+</suite> <!-- Failed suite [Functional Suite] -->

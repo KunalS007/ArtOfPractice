@@ -1,0 +1,167 @@
+package ART.ARTinterview;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URI;
+import java.time.Duration;
+import java.util.List;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
+
+import com.github.dockerjava.api.model.Link;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class ArrayProgram
+{
+	@Test
+	public void StringCount()
+	{
+		{
+			System.out.println("Enter the String:");
+			Scanner sc = new Scanner(System.in);
+			String s = sc.nextLine();
+			System.out.println("Length of the String: " +s.length());
+			
+			int count =1;
+			for(int i=0; i <s.length()- 1; i++)
+			{
+				if((s.charAt(i) == ' ') && (s.charAt(i+1)!= ' '))
+				{
+					count++;
+				}
+			}
+			System.out.println("Number of words strings: "
+					 +count);
+			
+		}	
+	}
+	
+	//@Test
+	public void CountCharOccr()
+	{
+		String s = "Java is java a programming language";
+		
+		char c ='a';
+		int count = s.length() - s.replace("a", "").length();
+		
+		System.out.println("" + count);
+	}
+	
+	//@Test
+	//maxmimum number
+	public void maxmin()
+	{
+		int array[] = {30,100,50,20,5,200};
+		
+		int max = array[0];
+		
+		for(int i=0;i<array.length;i++)
+		{
+			if(array[i] > max)
+			{
+				max = array[i];
+			}
+		}
+		System.out.println("Max Element in array:" + max);
+	
+		int min = array[0];
+		for(int i=0; i<array.length;i++)
+		{
+			if(array[i] < min)
+			{
+				min = array[i];
+			}
+		}
+		System.out.println("Min Element in array:" +min);
+	}
+	
+	//@Test
+	public void lowerupperAlph()
+	{
+		String ab = "WelCome to AuTomaTiON";
+		
+		int upperCount = 0;
+		int lowerCount = 0;
+		
+		for(int i=0; i<ab.length();i++)
+		{
+			char ch = ab.charAt(i);
+			
+			if(Character.isUpperCase(ch))
+			{
+				upperCount++;
+			}
+			else if(Character.isLowerCase(ch))
+			{
+				lowerCount++;
+			}
+		}
+		System.out.println("Upper count character:" +upperCount);
+		System.out.println("Lower count character:" +lowerCount);
+	}
+	
+	@Test
+	public void dragAndDrop()
+	{
+		String input = "Kunal Shah is in Vadodara";
+
+        String[] words = input.split(" ");
+        StringBuilder result = new StringBuilder();
+
+        // Take only first character of first 2 words
+        for (int i = 0; i < words.length; i++) 
+        {
+        	if(i<2)
+        	{
+        		result.append(words[i].charAt(0)).append(" ");
+        	}
+        	else
+        	{
+        		result.append(words[i]).append(" ");
+        	}
+        }
+
+        // Trim last extra space
+        System.out.println(result.toString().trim());
+    }
+	
+	@Test
+	public void Reverse()
+	{
+		String Input = "The Hero";
+	
+		String[] Words = Input.split(" ");
+		
+		StringBuilder sb = new StringBuilder(Input);
+		for(int i=0;i<Words.length;i++)
+		{
+			if(i<1)
+			{
+				 sb.append(Words[0]).reverse();
+			}
+			else
+			{
+				sb.append(Words[i]).append(" ");
+			}
+		}
+	//	StringBuilder df = sb.reverse();
+		System.out.println(" " +sb.toString().trim());
+	}
+}
+
+
+

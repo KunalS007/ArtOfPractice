@@ -1,0 +1,81 @@
+package Z2.Z2;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import org.apache.poi.ss.formula.functions.Rows;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+public class bc extends baseExcelZ2
+{
+
+	public void testOne() throws IOException
+	{
+		driver = init();
+	}
+	
+	@DataProvider(name="loginD")
+	public Object[][] getLoginData(String username,String password) throws IOException
+	{
+		String path = System.getProperty("user.dir") +"//TestData.xlsx";
+		FileInputStream fip = new FileInputStream(path);
+		
+		XSSFWorkbook workbook = new XSSFWorkbook(fip);
+		Sheet sheet = workbook.getSheet("Sheet1");
+		int rows = sheet.getPhysicalNumberOfRows();
+		
+		Object[][] data = new Object[rows - 1][2]; 
+		DataFormatter formatter = new DataFormatter();
+		
+		for(int i=1; i<rows; i++)
+		{
+			Row row = sheet.getRow(i);
+			if(row != null)
+			{
+				Cell userCell = row.getCell(0);
+				Cell passCell = row.getCell(1);
+				
+				data[i-1][0] = (userCell != null) ? formatter.formatCellValue(userCell): "";
+				data[i-1][1] = (userCell != null) ? formatter.formatCellValue(passCell): "";
+						
+			}
+		}
+		workbook.close();
+		fip.close();
+		return data;
+		
+	}
+	
+	@Test(dataProvider="loginD")
+	public void testSecond(String username, String password)
+	{
+		loginApp(username, password);
+		
+		boolean success = driver.findElements(By.linkText("Edit the information")).size()>0;
+		
+		if(success)
+		{
+			System.out.println("Valid user: " +username);
+			driver.findElement(By.xpath("//span[text()='My Account']")).click();
+	        driver.findElement(By.linkText("Logout")).click();
+	       
+		}
+		else
+		{
+			String fileName = "InvalidLogin_"+ username.replaceAll("[^A-Za-z0-9]", "_");
+			TakesScreenshot ts = takeScreenShot(fileName);
+		}
+		
+	}
+	
+	
+}

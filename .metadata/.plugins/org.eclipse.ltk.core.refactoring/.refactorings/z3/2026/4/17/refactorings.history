@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Linear_Search.java&apos; to &apos;1ARTinterview/src/test/java/ART.ARTinterview&apos;&#x0D;&#x0A;- Original project: &apos;z3&apos;&#x0D;&#x0A;- Destination element: &apos;1ARTinterview/src/test/java/ART.ARTinterview&apos;&#x0D;&#x0A;- Original element: &apos;z3.z3.Linear_Search.java&apos;" description="Copy compilation unit" destination="=1ARTinterview/src\/test\/java&lt;ART.ARTinterview" element1="/src\/test\/java&lt;z3.z3{Linear_Search.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1777100254790" units="1" version="1.0"/>
+</session>

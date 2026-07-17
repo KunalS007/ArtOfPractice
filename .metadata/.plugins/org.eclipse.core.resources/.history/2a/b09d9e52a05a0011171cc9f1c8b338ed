@@ -1,0 +1,29 @@
+package ART.ARTinterview;
+
+import org.testng.annotations.Test;
+
+public class asdff 
+{
+	@Test
+	public void Test()
+	{
+		String str = "Kunal Shah V";
+		String words[] = str.split(" ");
+		String result = "";
+		
+		for(int i=0; i<words.length; i++)
+		{
+			String word = words[i];
+			String reverseWord = "";
+			
+			for(int j = word.length()-1; j>=0; j--)
+			{
+				result += reverseWord.charAt(j);
+			}
+			
+		}
+		System.out.println(result);
+		
+	}
+	
+}

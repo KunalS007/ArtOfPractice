@@ -1,0 +1,30 @@
+package SyncProject.Presentation;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class StandAloneTest {
+
+	public static void main(String[] args) 
+	{
+		String str = "I Love Infosys";
+		String wordCount = "Infosys";
+		int count = 0;
+	
+		String[] words = str.split(" ");
+		for(String word : words)
+		{
+			if(word.equals(wordCount))
+			{
+				count++;
+			}
+		}
+		System.out.println("The word " +wordCount+ " appears  " +count + " times");
+	}
+
+}
